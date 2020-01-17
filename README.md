@@ -1,4 +1,4 @@
-# test
+# Example created with Tailwindcss and Vuejs
 
 ## Project setup
 ```
