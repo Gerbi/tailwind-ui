@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <div class="font-sans">
-    <div class="border-b">
+    <div class="border-b shadow">
       <div class="container mx-auto flex items-center justify-between py-2">
         <div>
           <a href="//telegram.org/" class="text-tgblue">
