@@ -5,13 +5,24 @@ module.exports = {
         '2px': '2px',
         '7': '1.75rem',
         '9': '2.25rem',
+        '122': '122px',
+        '72': '18rem',
         '80': '20rem',
       },
       borderRadius: {
         md: '0.375rem',
+        tg: '22px',
       },
       boxShadow: {
         'outline': '0 0 0 3px rgba(66, 123, 225, 0.25)',
+      },
+      fontFamily: {
+        'sans': 'Roboto, sans-serif',
+      },
+      colors: {
+        tgreen: '#33d684',
+        tgblue: '#32afed',
+        thgreen: '#28c979',
       },
     },
     transform: { // defaults to this value
@@ -82,6 +93,7 @@ module.exports = {
     transformStyle: ['responsive'],
     backfaceVisibility: ['responsive'],
     transformBox: ['responsive'],
+
   },
   plugins: [
     require('@tailwindcss/custom-forms'),
