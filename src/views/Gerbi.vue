@@ -14,7 +14,7 @@
           </a>
         </div>
         <div>
-          <router-link to="/" class="text-tgtblue hover:underline">Home</router-link>
+          <router-link to="/" class="text-tgtblue hover:underline font-medium">Home</router-link>
         </div>
       </div>
     </div>
