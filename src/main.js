@@ -3,8 +3,8 @@ import App from './App.vue';
 import router from './router';
 import store from './store';
 
-import '@fortawesome/fontawesome-free/css/all.min.css';
 import '@lottiefiles/lottie-player';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 Vue.config.productionTip = false;
 

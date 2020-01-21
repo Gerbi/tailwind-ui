@@ -22,6 +22,7 @@ module.exports = {
       colors: {
         tgreen: '#33d684',
         tgblue: '#32afed',
+        tgtblue: '#0088cc',
         thgreen: '#28c979',
       },
     },
