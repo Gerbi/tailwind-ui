@@ -10,13 +10,18 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.11.2",
     "@lottiefiles/lottie-player": "^0.2.1",
+    "@vue/composition-api": "^0.3.4",
+    "axios": "^0.19.2",
     "chart.js": "2.9.3",
     "core-js": "^3.6.4",
     "popper.js": "1.16.0",
     "tailwindcss-gradients": "^2.3.1",
     "tailwindcss-transforms": "^2.2.0",
+    "unsplash-js": "^6.0.0",
     "vue": "^2.6.11",
+    "vue-gallery-slideshow": "^1.5.0",
     "vue-router": "^3.1.5",
+    "vue-runtime-helpers": "^1.1.2",
     "vuex": "^3.1.2"
   },
   "devDependencies": {

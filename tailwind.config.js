@@ -6,8 +6,12 @@ module.exports = {
         '7': '1.75rem',
         '9': '2.25rem',
         '122': '122px',
+        '150': '150px',
         '72': '18rem',
         '80': '20rem',
+      },
+      padding: {
+        '5/6': '83.3333333%',
       },
       borderRadius: {
         md: '0.375rem',
@@ -24,8 +28,43 @@ module.exports = {
         tgblue: '#32afed',
         tgtblue: '#0088cc',
         thgreen: '#28c979',
+        bins: '#fafafa',
       },
     },
+    customForms: theme => ({
+      default: {
+        input: {
+          borderRadius: theme('borderRadius.lg'),
+          '&:focus': {
+            backgroundColor: theme('colors.white'),
+          }
+        },
+        select: {
+          lineHeight: theme('lineHeight.snug'),
+          borderColor: 'transparent',
+          borderRadius: theme('borderRadius.lg'),
+          backgroundColor: theme('colors.gray.700'),
+          boxShadow: theme('boxShadow.default'),
+          icon: '<svg fill="#fff" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>',
+        },
+        checkbox: {
+          borderColor: 'transparent',
+          width: theme('spacing.6'),
+          height: theme('spacing.6'),
+          backgroundColor: theme('colors.gray.900'),
+          focusBorderColor: 'transparent',
+          focusShadow: 'none'
+        },
+        radio: {
+          borderColor: 'transparent',
+          width: theme('spacing.6'),
+          height: theme('spacing.6'),
+          backgroundColor: theme('colors.gray.900'),
+          focusBorderColor: 'transparent',
+          focusShadow: 'none'
+        },
+      },
+    }),
     transform: { // defaults to this value
       'none': 'none',
     },
