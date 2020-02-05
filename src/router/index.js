@@ -1,21 +1,48 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import Landing from '../views/Landing.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'home',
-    component: Home,
+    name: 'Landing',
+    component: Landing,
+  },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('../views/Login.vue'),
+  },
+  {
+    path: '/gerbi',
+    name: 'Gerbi',
+    component: () => import('../views/Gerbi.vue'),
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import('../views/Profile.vue'),
+  },
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: () => import('../views/Dashboard.vue'),
+  },
+  {
+    path: '/home',
+    name: 'Home',
+    component: () => import('../views/Home.vue'),
+  },
+  {
+    path: '/workcation',
+    name: 'test',
+    component: () => import('../views/Tests/Test.vue'),
   },
   {
     path: '/layout',
     name: 'layout',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/Board/Layout.vue'),
   },
   {
@@ -29,7 +56,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/kod/First.vue'),
   },
   {
-    path: '/rnts',
+    path: '/coinbase',
     name: 'rnts',
     component: () => import(/* webpackChunkName: "about" */ '../views/rnt/rnts.vue'),
   },
@@ -42,6 +69,16 @@ const routes = [
     path: '/pages',
     name: 'pages',
     component: () => import(/* webpackChunkName: "about" */ '../views/news/Pages.vue'),
+  },
+  {
+    path: '/search',
+    name: 'search',
+    component: () => import('../views/SearchPhoto.vue'),
+  },
+  {
+    path: '/i',
+    name: 'Inst',
+    component: () => import('../views/Inst.vue'),
   },
 ];
 
