@@ -14,7 +14,6 @@ module.exports = {
         '5/6': '83.3333333%',
       },
       borderRadius: {
-        md: '0.375rem',
         tg: '22px',
       },
       boxShadow: {
@@ -24,11 +23,18 @@ module.exports = {
         'sans': 'Roboto, sans-serif',
       },
       colors: {
+        overlight: '#383B40',
+        overdark: '#2D2F34',
+        surface: '#27292D',
+        sbase: '#1F2023',
+        sover: '#010101',
         tgreen: '#33d684',
         tgblue: '#32afed',
         tgtblue: '#0088cc',
         thgreen: '#28c979',
         bins: '#fafafa',
+        emo: '#ccd69e2e',
+        emoh: '#d69e2e',
       },
     },
     customForms: theme => ({
@@ -61,7 +67,7 @@ module.exports = {
           height: theme('spacing.6'),
           backgroundColor: theme('colors.gray.900'),
           focusBorderColor: 'transparent',
-          focusShadow: 'none'
+          focusShadow: 'none',
         },
       },
     }),
@@ -121,24 +127,8 @@ module.exports = {
       'tl': 'top left',
     },
   },
-  variants: { // all the following default to ['responsive']
-    transform: ['responsive'],
-    transformOrigin: ['responsive'],
-    translate: ['responsive'],
-    scale: ['responsive'],
-    rotate: ['responsive'],
-    skew: ['responsive'],
-    perspective: ['responsive'],
-    perspectiveOrigin: ['responsive'],
-    transformStyle: ['responsive'],
-    backfaceVisibility: ['responsive'],
-    transformBox: ['responsive'],
-
-  },
+  variants: {},
   plugins: [
     require('@tailwindcss/custom-forms'),
-    require('tailwindcss-transforms')({
-      '3d': false, // defaults to false
-    }),
   ],
 }
