@@ -76,6 +76,11 @@ const routes = [
     component: () => import('../views/SearchPhoto.vue'),
   },
   {
+    path: '/dash01',
+    name: 'dash01',
+    component: () => import('../views/Dash01.vue'),
+  },
+  {
     path: '/i',
     name: 'Inst',
     component: () => import('../views/Inst.vue'),
