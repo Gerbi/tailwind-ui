@@ -1,14 +1,14 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Landing from '../views/Landing.vue';
+import Inicio from '../views/Inicio.vue';
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: '/',
-    name: 'Landing',
-    component: Landing,
+    name: 'Inicio',
+    component: Inicio,
   },
   {
     path: '/login',
@@ -63,7 +63,7 @@ const routes = [
   {
     path: '/news',
     name: 'news',
-    component: () => import(/* webpackChunkName: "about" */ '../views/news/First.vue'),
+    component: () => import(/* webpackChunkName: "about" */ '../views/news/Articles.vue'),
   },
   {
     path: '/pages',
@@ -79,6 +79,11 @@ const routes = [
     path: '/dash01',
     name: 'dash01',
     component: () => import('../views/Dash01.vue'),
+  },
+  {
+    path: '/inbox',
+    name: 'Inbox',
+    component: () => import('../views/Inbox.vue'),
   },
   {
     path: '/i',
