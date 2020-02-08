@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div class="font-sans">
-    <div class="border-b shadow">
+  <div class="bg-sbase h-screen antialiased leading-none">
+    <div class="border-b border-surface bg-overdark shadow">
       <div class="container mx-auto flex items-center justify-between px-4 py-3">
         <router-link to="/" class="navbar-logo block items-center text-xl text-gray-800 font-semibold flex text-left">
           <svg class="h-8 w-auto fill-current text-blue-600 mr-3" viewBox="0 0 24 24">
@@ -27,13 +27,13 @@
         >
         </lottie-player>
       </div>
-      <div class="text-center text-2xl font-semibold text-gray-800">Gerbi</div>
-      <div class="text-center text-gray-600 font-medium text-sm mb-2">
+      <div class="text-center text-2xl font-semibold text-white mb-3">Gerbi</div>
+      <div class="text-center text-gray-600 font-medium text-sm mb-3">
         @gerbi
       </div>
-      <div class="text-center text-gray-900 font-normal">Keep calm and make epic shit!</div>
-      <div class="mt-8">
-        <a class="px-6 rounded-tg py-3 bg-tgreen text-white text-xs font-semibold hover:bg-thgreen uppercase" href="tg://resolve?domain=gerbi">Send Message</a>
+      <div class="text-center text-gray-400 font-normal">Keep calm and make epic shit!</div>
+      <div class="mt-10">
+        <a class="transition duration-500 ease-in-out px-5 py-3 rounded-tg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white font-normal leading-none uppercase" href="tg://resolve?domain=gerbi">Send Message</a>
       </div>
     </div>
   </div>
