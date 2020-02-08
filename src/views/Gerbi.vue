@@ -3,7 +3,7 @@
   <div class="font-sans">
     <div class="border-b shadow">
       <div class="container mx-auto flex items-center justify-between px-4 py-3">
-        <router-link to="/dashboard" class="navbar-logo block items-center text-xl text-gray-800 font-semibold flex text-left">
+        <router-link to="/" class="navbar-logo block items-center text-xl text-gray-800 font-semibold flex text-left">
           <svg class="h-8 w-auto fill-current text-blue-600 mr-3" viewBox="0 0 24 24">
             <path d="M9 20v-1.7l.01-.24L15.07 12h2.94c1.1 0 1.99.89 1.99 2v4a2 2 0 0 1-2 2H9zm0-3.34V5.34l2.08-2.07a1.99 1.99 0 0 1 2.82 0l2.83 2.83a2 2 0 0 1 0 2.82L9 16.66zM0 1.99C0 .9.89 0 2 0h4a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zM4 17a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
           </svg>
@@ -22,7 +22,7 @@
           autoplay
           loop
           mode="normal"
-          src="https://assets2.lottiefiles.com/animated_stickers/lf_tgs_kSLxy8.json"
+          src="https://assets9.lottiefiles.com/animated_stickers/lf_tgs_SMS4G7.json"
           style="width: 175px"
         >
         </lottie-player>
@@ -31,16 +31,9 @@
       <div class="text-center text-gray-600 font-medium text-sm mb-2">
         @gerbi
       </div>
-      <div class="text-center text-gray-800">No dejes que el momento pase.</div>
+      <div class="text-center text-gray-900 font-normal">Keep calm and make epic shit!</div>
       <div class="mt-8">
         <a class="px-6 rounded-tg py-3 bg-tgreen text-white text-xs font-semibold hover:bg-thgreen uppercase" href="tg://resolve?domain=gerbi">Send Message</a>
-      </div>
-      <div class="flex justify-center mt-20">
-        <a href="https://www.github.com/gerbi"
-          class="bg-white text-gray-900 h-10 w-10  shadow-lg font-normal flex items-center justify-center align-center rounded-full outline-none focus:outline-none"
-          type="button">
-          <i class="fab fa-3x fa-github"></i>
-        </a>
       </div>
     </div>
   </div>

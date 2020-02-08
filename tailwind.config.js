@@ -35,6 +35,8 @@ module.exports = {
         bins: '#fafafa',
         emo: '#ccd69e2e',
         emoh: '#d69e2e',
+        orabase: '#e64415',
+        peri: '#db1e37',
       },
     },
     customForms: theme => ({
