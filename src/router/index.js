@@ -16,7 +16,7 @@ const routes = [
   //   component: () => import('../views/Login.vue'),
   // },
   {
-    path: '/gerbi',
+    path: '/tg',
     name: 'Gerbi',
     component: () => import('../views/Gerbi.vue'),
   },
