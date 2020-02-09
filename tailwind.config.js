@@ -5,6 +5,7 @@ module.exports = {
         '2px': '2px',
         '7': '1.75rem',
         '9': '2.25rem',
+        '14': '56px',
         '122': '122px',
         '150': '150px',
         '72': '18rem',
@@ -23,6 +24,8 @@ module.exports = {
         'sans': 'Roboto, sans-serif',
       },
       colors: {
+        vknav: '#4a76a8',
+        vkbody: '#edeef0',
         overlight: '#383B40',
         overdark: '#2D2F34',
         surface: '#27292D',
