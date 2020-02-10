@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div class="hidden lg:block fixed w-48">
-    <a href="#" class="mt-1 -mx-3 px-3 py-2 flex items-center justify-between text-sm font-medium bg-gray-200 rounded-lg">
+  <div class="hidden lg:block fixed w-48 mt-2">
+    <a href="#" class="-mx-3 px-3 py-2 flex items-center justify-between text-sm font-medium bg-gray-200 rounded-lg">
       <span class="inline-flex items-center">
         <svg viewBox="0 0 24 24" class="h-7 w-7 fill-current text-blue-600">
           <path d="M4 3h16a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5c0-1.1.9-2 2-2zm16 4V5H4v2h16zm0 2H4v10h16V9z"/>
