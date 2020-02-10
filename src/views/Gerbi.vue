@@ -16,24 +16,22 @@
     <a class="flex items-center justify-center py-2 bg-tgblue text-white hidden" href="//telegram.org/dl?tme=f0e39e4b18cd74bc75_7700227613531071351">
       Don't have <strong class="px-1">Telegram</strong> yet? Try it now!<i class="ml-1 fas fa-angle-right"></i>
     </a>
-    <div class="relative text-center mt-8">
-      <div class="flex justify-center mb-4">
-        <lottie-player
-          autoplay
-          loop
-          mode="normal"
-          src="https://assets9.lottiefiles.com/animated_stickers/lf_tgs_SMS4G7.json"
-          style="width: 175px"
-        >
-        </lottie-player>
-      </div>
+    <div class="relative text-center mt-12">
+      <!--  Profile Image  -->
+            <div class="mb-4 flex justify-center">
+              <a href="https://t.me/gerbi" class="text-blue-600">
+                <img class="h-122 w-122 bg-cover rounded-full text-center" src="../assets/img/profile.jpg">
+              </a>
+            </div>
       <div class="text-center text-2xl font-semibold text-white mb-3">Gerbi</div>
       <div class="text-center text-gray-600 font-medium text-sm mb-3">
         @gerbi
       </div>
       <div class="text-center text-gray-400 font-normal">Keep calm and make epic shit!</div>
-      <div class="mt-10">
-        <a class="transition duration-500 ease-in-out px-5 py-3 rounded-tg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white font-normal leading-none uppercase" href="tg://resolve?domain=gerbi">Send Message</a>
+      <div class="mt-10 flex justify-center">
+        <a class="transition duration-500 ease-in-out px-5 py-3 rounded-tg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white font-normal leading-none uppercase" href="tg://resolve?domain=gerbi">
+          <p>Send Message</p>
+        </a>
       </div>
     </div>
   </div>
