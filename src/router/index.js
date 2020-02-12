@@ -10,15 +10,15 @@ const routes = [
     name: 'Inicio',
     component: Inicio,
   },
-  // {
-  //   path: '/login',
-  //   name: 'Login',
-  //   component: () => import('../views/Login.vue'),
-  // },
   {
     path: '/tg',
     name: 'Gerbi',
     component: () => import('../views/Gerbi.vue'),
+  },
+  {
+    path: '/vk',
+    name: 'Vk',
+    component: () => import('../views/Vk.vue'),
   },
   // {
   //   path: '/profile',
