@@ -32,95 +32,26 @@
         </div>
       </div>
       <div class="mt-2 -mx-2">
-        <p class="px-2 my-2 text-xs font-semibold text-gray-600 uppercase">5 tracks</p>
-        <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
+        <p class="px-2 my-2 text-xs font-semibold text-gray-600 uppercase">50 tracks</p>
+        <div v-for="(music, i) in musics" :key="i">
+          <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+            <div class="flex justify-between p-2">
+              <div class="flex">
             <span class="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-md">
+<!--              <img class="h-full w-full rounded-lg" :src="music.image.text" alt="">-->
               <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                 <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
               </svg>
             </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Song From A Secret Garden
-                </p>
-                <p class="text-sm text-gray-700">Rolf Lovland</p>
+                <div class="ml-3">
+                  <p class="text-sm text-blue-700">
+                    {{ music.name }}
+                  </p>
+                  <a :href="music.artist.url" class="text-sm text-gray-700">{{ music.artist.name }}</a>
+                </div>
               </div>
+              <span class="left-0 flex items-center mr-1 text-xs text-gray-600">3.28</span>
             </div>
-            <span class="left-0 flex items-center mr-1 text-xs text-gray-600">3.45</span>
-          </div>
-        </div>
-        <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-md">
-              <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-              </svg>
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  In my Veins
-                </p>
-                <p class="text-sm text-gray-700">Andrew Belle</p>
-              </div>
-            </div>
-            <span class="left-0 flex items-center mr-1 text-xs text-gray-600">5.19</span>
-          </div>
-        </div>
-        <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-md">
-              <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-              </svg>
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Please Don't Go
-                </p>
-                <p class="text-sm text-gray-700">Joel Adams</p>
-              </div>
-            </div>
-            <span class="left-0 flex items-center mr-1 text-xs text-gray-600">3.45</span>
-          </div>
-        </div>
-        <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-md">
-              <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-              </svg>
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  I Wish You Were ere
-                </p>
-                <p class="text-sm text-gray-700">Pink Floyd</p>
-              </div>
-            </div>
-            <span class="left-0 flex items-center mr-1 text-xs text-gray-600">3.45</span>
-          </div>
-        </div>
-        <div class="text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 bg-gray-400 rounded-md">
-              <svg class="w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
-                <path class="heroicon-ui" d="M8 14.54V6a1 1 0 0 1 .76-.97l12-3A1 1 0 0 1 22 3v12a4 4 0 1 1-2-3.46V4.28l-10 2.5V18a4 4 0 1 1-2-3.46zM6 20a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm12-3a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
-              </svg>
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Women
-                </p>
-                <p class="text-sm text-gray-700">John Lennon</p>
-              </div>
-            </div>
-            <span class="left-0 flex items-center mr-1 text-xs text-gray-600">3.28</span>
           </div>
         </div>
       </div>
@@ -129,12 +60,28 @@
 </template>
 
 <script>
+const axios = require('axios');
 
 export default {
   name: 'Vkmusic',
   components: {},
   data() {
-    return {};
+    return {
+      musics: [],
+      api_key: 'b72f4dc85d55ded204de4ba97307260c',
+    };
+  },
+
+  mounted() {
+    const self = this;
+    axios.get('https://ws.audioscrobbler.com/2.0/?method=tag.gettoptracks&tag=disco&api_key=b72f4dc85d55ded204de4ba97307260c&format=json')
+      .then((response) => {
+        self.musics = response.data.tracks.track;
+      })
+      .catch((e) => {
+        // handle error
+        console.log(e);
+      });
   },
 };
 </script>
