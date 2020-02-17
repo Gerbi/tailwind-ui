@@ -16,99 +16,28 @@
       </div>
       <div class="mt-2 -mx-2">
         <p class="px-2 my-4 text-xs font-semibold text-gray-600 uppercase">important</p>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex items-center">
+        <div v-for="usuario in usuarios" :key="usuario.id">
+          <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+            <div class="flex justify-between p-2">
+              <div class="flex items-center">
             <span class="flex items-center justify-center w-10 h-10 rounded-md">
-              <img class="rounded-full" src="../../assets/img/team-4-470x470.png" alt="">
+              <img class="h-full w-full rounded-full" :src="usuario.avatar" alt="">
             </span>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-800">
-                  Kristina Web
-                </p>
+                <div class="ml-3">
+                  <p class="text-sm font-medium text-gray-800">
+                    {{ usuario.first_name }}  {{ usuario.last_name }}
+                  </p>
+                  <p class="text-xs font-medium text-gray-600">
+                    {{ usuario.email }}
+                  </p>
+                </div>
               </div>
+              <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
+                <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
+                  <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
+                </svg>
+              </button>
             </div>
-            <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
-              <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
-                <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex items-center">
-            <span class="flex items-center justify-center w-10 h-10 rounded-md">
-              <img class="rounded-full" src="../../assets/img/team-1-800x800.jpg" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-800">
-                  Kristina Web
-                </p>
-              </div>
-            </div>
-            <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
-              <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
-                <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex items-center">
-            <span class="flex items-center justify-center w-10 h-10 rounded-md">
-              <img class="rounded-full" src="../../assets/img/team-2-800x800.jpg" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-800">
-                  Kristina Web
-                </p>
-              </div>
-            </div>
-            <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
-              <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
-                <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex items-center">
-            <span class="flex items-center justify-center w-10 h-10 rounded-md">
-              <img class="rounded-full" src="../../assets/img/team-3-800x800.jpg" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-800">
-                  Kristina Web
-                </p>
-              </div>
-            </div>
-            <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
-              <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
-                <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex items-center">
-            <span class="flex items-center justify-center w-10 h-10 rounded-md">
-              <img class="rounded-full" src="../../assets/img/team-1-800x800.jpg" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-800">
-                  Kristina Web
-                </p>
-              </div>
-            </div>
-            <button class="mr-2 text-gray-500 text-blue-600 focus:outline-none">
-              <svg viewBox="0 0 24 24" class="fill-current h-7 w-7">
-                <path d="M2 15V5c0-1.1.9-2 2-2h16a2 2 0 0 1 2 2v15a1 1 0 0 1-1.7.7L16.58 17H4a2 2 0 0 1-2-2zM20 5H4v10h13a1 1 0 0 1 .7.3l2.3 2.29V5z"/>
-              </svg>
-            </button>
           </div>
         </div>
       </div>
@@ -117,12 +46,30 @@
 </template>
 
 <script>
+const axios = require('axios');
 
 export default {
-  name: 'Vkmusic',
+  name: 'Vkfriends',
   components: {},
   data() {
-    return {};
+    return {
+      usuarios: [],
+    };
+  },
+  mounted() {
+    this.getUsuarios();
+  },
+  methods: {
+    getUsuarios() {
+      axios.get('https://reqres.in/api/users?per_page=12')
+        .then((response) => {
+          this.usuarios = response.data.data;
+        })
+        .catch((e) => {
+          // handle error
+          console.log(e);
+        });
+    },
   },
 };
 </script>
