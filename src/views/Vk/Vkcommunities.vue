@@ -15,77 +15,19 @@
         </form>
       </div>
       <div class="mt-4 -mx-2">
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
+        <div v-for="usuario in usuarios" :key="usuario.id">
+          <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
+            <div class="flex justify-between p-2">
+              <div class="flex">
             <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" src="https://vuejs.org/images/logo.png" alt="">
+              <img class="rounded-full object-cover" :src="usuario.avatar" alt="">
             </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Vue.js
-                </p>
-                <p class="text-sm text-gray-700">10,043 members</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" src="https://avatars0.githubusercontent.com/u/30317862?s=200&v=4" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Tailwind Css
-                </p>
-                <p class="text-sm text-gray-700">6,304 members</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" src="https://avatars3.githubusercontent.com/u/958072?s=200&v=4" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Laravel
-                </p>
-                <p class="text-sm text-gray-700">18,523</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" src="https://avatars0.githubusercontent.com/u/6154722?s=200&v=4" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Microsoft
-                </p>
-                <p class="text-sm text-gray-700">848 members</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
-          <div class="flex justify-between p-2">
-            <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" src="https://avatars3.githubusercontent.com/u/6113871?s=200&v=4" alt="">
-            </span>
-              <div class="ml-3">
-                <p class="text-sm text-blue-700">
-                  Vue.js
-                </p>
-                <p class="text-sm text-gray-700">1,453 members</p>
+                <div class="ml-3">
+                  <p class="text-sm text-blue-700">
+                    {{ usuario.first_name }} {{ usuario.last_name }}
+                  </p>
+                  <p class="text-sm text-gray-700">{{usuario.id}} members</p>
+                </div>
               </div>
             </div>
           </div>
@@ -96,12 +38,30 @@
 </template>
 
 <script>
+const axios = require('axios');
 
 export default {
-  name: 'Vkmusic',
+  name: 'Vkcommunities',
   components: {},
   data() {
-    return {};
+    return {
+      usuarios: [],
+    };
+  },
+  mounted() {
+    this.getUsuarios();
+  },
+  methods: {
+    getUsuarios() {
+      axios.get('https://reqres.in/api/users?per_page=12')
+        .then((response) => {
+          this.usuarios = response.data.data;
+        })
+        .catch((e) => {
+          // handle error
+          console.log(e);
+        });
+    },
   },
 };
 </script>
