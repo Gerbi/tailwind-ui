@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <div class="sticky top-0 z-40 bg-vkbody md:pb-2">
-    <div class="bg-white border-b shadow ">
+    <div class="bg-white border-b shadow">
       <div class="container mx-auto max-w-screen-lg md:px-6 xl:px-18">
         <div class="flex-wrap items-center justify-between hidden py-1 bg-white md:flex">
           <router-link to="/" class="flex items-center block w-1/4 mr-4 text-xl font-semibold">
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="items-center hidden xl:max-w-xs md:block md:flex md:relative">
-            <form>
+            <form @submit.prevent="getUsers()">
               <div class="absolute inset-y-0 left-0 flex items-center pl-3">
                 <svg class="w-5 h-5 text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>
@@ -47,14 +47,14 @@
                 <div v-if="searchBar" class="absolute mx-auto mt-4 text-left origin-top-right">
                   <div class="w-64 h-56 py-1 overflow-y-auto bg-white border rounded-lg shadow-lg">
                     <div>
-                      <a href="#" class="block px-4 py-2 leading-tight hover:bg-gray-200">
+                      <a href="#" class="block px-4 py-2 leading-tight hover:bg-gray-200" v-for="user in users" :key="user">
                         <div class="flex items-center">
                           <img
-                            src="../../assets/img/profile.jpg"
+                            :src="user.avatar"
                             alt="" class="object-cover w-8 h-8 rounded-full">
                           <div class="ml-3">
-                            <span class="block text-sm font-medium leading-none text-gray-800">Remember Me</span>
-                            <span class="text-xs text-gray-600">New York, USA</span>
+                            <span class="block text-sm font-medium leading-none text-gray-800">{{user.first_name}} {{user.last_name}}</span>
+                            <span class="text-xs text-gray-600">{{ user.email}}</span>
                           </div>
                         </div>
                       </a>
@@ -66,7 +66,7 @@
             <div id="dropdown" class="relative inline-block pl-3">
               <button @click="isOpen = true" class="flex items-center py-2 font-semibold focus:outline-none">
                 <img
-                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=4&amp;w=144&amp;h=144&amp;q=80"
+                  src="../../assets/img/perfil2-750.jpg"
                   alt="" class="object-cover rounded-full h-7 w-7">
                 <svg class="w-6 h-6 ml-1 text-gray-700 fill-current" viewBox="0 0 24 24">
                   <path
@@ -142,6 +142,7 @@
 </template>
 
 <script>
+const axios = require('axios');
 
 export default {
   name: 'Top',
@@ -149,7 +150,25 @@ export default {
     return {
       isOpen: false,
       searchBar: false,
+      users: [],
+      page: 1,
+      per_page: 10,
     };
+  },
+  mounted() {
+    this.getUsers();
+  },
+  methods: {
+    getUsers() {
+      axios
+        .get('https://reqres.in/api/users?per_page=12')
+        .then((response) => {
+          this.users = response.data.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
 };
 </script>
