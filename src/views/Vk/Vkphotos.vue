@@ -14,7 +14,7 @@
     </div>
     <div class="-mx-2 mt-4">
       <div class="grid grid-cols-1 lg:grid-cols-2 text-center">
-        <div class="cursor-pointer p-2" v-for="photo in photos" :key="photo">
+        <div class="cursor-pointer p-2" v-for="(photo, i) in photos" :key="i">
           <div class="rounded-lg relative inline-block shadow align-top">
             <button class="block focus:outline-none">
               <span class="block h-64 w-72 overflow-hidden rounded-lg flex items-center">
@@ -53,7 +53,6 @@ export default {
     };
   },
   mounted() {
-    console.log('Mounted');
     this.getPhotos();
   },
   methods: {

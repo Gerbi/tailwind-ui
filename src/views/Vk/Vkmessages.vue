@@ -113,7 +113,7 @@
 <script>
 
 export default {
-  name: 'Vkmusic',
+  name: 'Vkmessages',
   components: {},
   data() {
     return {};
