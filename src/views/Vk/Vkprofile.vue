@@ -152,6 +152,7 @@ export default {
   data() {
     return {
       usuarios: [],
+      myError: '',
     };
   },
   mounted() {
@@ -164,8 +165,7 @@ export default {
           this.usuarios = response.data.data;
         })
         .catch((e) => {
-          // handle error
-          console.log(e);
+          this.myError(e);
         });
     },
   },
