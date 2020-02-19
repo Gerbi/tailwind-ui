@@ -16,7 +16,7 @@
           </div>
           <h1 class="text-gray-200 text-3xl font-bold leading-loose mt-8">Gerbi Gómez</h1>
           <h1 class="text-gray-200 text-lg leading-normal my-3">Web Developer</h1>
-          <p class="text-gray-700">This page is under construction</p>
+          <p class="text-gray-700 mt-10">My examples project's</p>
         </div>
         <div class="flex justify-center text-center mt-8">
           <router-link to="/tg" class="transition duration-500 ease-in-out mx-2 px-5 py-3 rounded-lg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white shadow-xl font-normal leading-none">
