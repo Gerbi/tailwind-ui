@@ -2,7 +2,7 @@
   <!-- eslint-disable max-len -->
   <div class="sticky top-0 z-40 bg-vkbody md:pb-2">
     <div class="bg-white border-b shadow">
-      <div class="container mx-auto max-w-screen-lg md:px-6 xl:px-18">
+      <div class="container mx-auto max-w-screen-lg md:px-6 lg:px-12 xl:px-18">
         <div class="flex-wrap items-center justify-between hidden py-1 bg-white md:flex">
           <router-link to="/" class="flex items-center block w-1/4 mr-4 text-xl font-semibold">
 <!--            <svg class="w-auto h-8 text-blue-600 fill-current" viewBox="0 0 24 24">-->
