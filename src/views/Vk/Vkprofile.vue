@@ -11,7 +11,7 @@
         <p class="ml-2 text-lg font-semibold text-gray-800">@lucy</p>
       </div>
       <div class="relative w-full">
-        <form @submit.prevent="getCommunities()">
+        <form>
           <button class="block w-full px-4 py-2 pl-10 text-sm text-center text-gray-500 bg-gray-200 rounded-lg focus:outline-none focus:text-gray-800 focus:bg-gray-300">Your profile is private</button>
         </form>
       </div>
