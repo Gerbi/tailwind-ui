@@ -66,7 +66,7 @@
       </div>
       <div class="-mx-4 border-b"></div>
     </div>
-    <article class="px-4 pt-4 pb-4 xl:px-10 xl:pt-4 bg-white md:rounded-b-lg shadow">
+    <article class="px-4 pt-4 pb-4 xl:pt-4 bg-white md:rounded-b-lg shadow">
       <div class="flex justify-between">
         <div class="flex items-center">
           <img
@@ -100,7 +100,7 @@
       </div>
       <Comments />
     </article>
-    <article class="px-4 pt-4 pb-4 my-4 xl:px-10 xl:pt-4 bg-white md:rounded-b-lg shadow">
+    <article class="px-4 pt-4 pb-4 my-4 xl:pt-4 bg-white md:rounded-lg shadow">
       <div class="flex justify-between">
         <div class="flex items-center">
           <img
