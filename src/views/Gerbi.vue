@@ -28,7 +28,7 @@
       </div>
       <div class="text-center text-gray-400 font-normal">Keep calm and make epic shit!</div>
       <div class="mt-10 flex justify-center">
-        <a class="transition duration-500 ease-in-out px-5 py-3 rounded-tg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white font-normal leading-none uppercase" href="tg://resolve?domain=gerbi">
+        <a class="transition duration-500 ease-in-out px-5 py-3 rounded-tg bg-overdark hover:bg-overlight transform hover:-translate-y-1 hover:scale-110 text-sm text-white font-normal leading-none uppercase focus:outline-none" href="tg://resolve?domain=gerbi">
           <p>Send Message</p>
         </a>
       </div>

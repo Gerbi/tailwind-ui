@@ -18,6 +18,16 @@
                 </span>
               </div>
             </li>
+            <li>
+              <div class="mt-1 -mx-3 px-3 py-2 flex items-center justify-between text-sm font-medium hover:bg-gray-300 rounded-lg" v-on:click="toggleTabs(4)" v-bind:class="{'text-gray-600 bg-vkbody': openTab !== 4, 'text-gray-700 bg-gray-300': openTab === 4}">
+                <span class="inline-flex items-center">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7 fill-current text-blue-500">
+                    <path d="M12 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm9 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v2z"/>
+                  </svg>
+                  <span class="ml-4 text-gray-800">Friends</span>
+                </span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -29,6 +39,9 @@
                 <div class="tab-content tab-space">
                   <div v-bind:class="{'hidden': openTab !== 1, 'block': openTab === 1}">
                     <Vkprofile />
+                  </div>
+                  <div v-bind:class="{'hidden': openTab !== 4, 'block': openTab === 4}">
+                    <Vkfriends />
                   </div>
                 </div>
               </div>
@@ -43,10 +56,12 @@
 <script>
 import Top from '../components/vk/Top.vue';
 import Vkprofile from './Vk/Vkprofile.vue';
+import Vkfriends from './Vk/Vkfriends.vue';
 
 export default {
   name: 'Inbox',
   components: {
+    Vkfriends,
     Vkprofile,
     Top,
   },
