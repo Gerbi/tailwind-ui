@@ -47,7 +47,7 @@
                 <div v-if="searchBar" class="absolute mx-auto mt-4 text-left origin-top-right">
                   <div class="w-64 h-56 py-1 overflow-y-auto bg-white border rounded-lg shadow-lg">
                     <div>
-                      <a href="#" class="block px-4 py-2 leading-tight hover:bg-gray-200" v-for="user in users" :key="user">
+                      <a href="#" class="block px-4 py-2 leading-tight hover:bg-gray-200" v-for="user in users" :key="user.id">
                         <div class="flex items-center">
                           <img
                             :src="user.avatar"
