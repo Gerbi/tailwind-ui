@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="items-center hidden xl:max-w-xs md:block md:flex md:relative">
-            <form @submit.prevent="getUsers()">
+            <form>
               <div class="absolute inset-y-0 left-0 flex items-center pl-3">
                 <svg class="w-5 h-5 text-gray-600 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                   <path d="M12.9 14.32a8 8 0 1 1 1.41-1.41l5.35 5.33-1.42 1.42-5.33-5.34zM8 14A6 6 0 1 0 8 2a6 6 0 0 0 0 12z"/>

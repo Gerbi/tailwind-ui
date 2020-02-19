@@ -3,7 +3,7 @@
   <div class="bg-white rounded-lg shadow-sm px-4 py-5">
     <div class="">
       <div class="relative w-full">
-        <form @submit.prevent="getMusic()">
+        <form>
           <div class="absolute inset-y-0 left-0 flex items-center pl-3">
             <a href="">
               <svg class="w-5 h-5 text-gray-500 fill-current hover:text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
@@ -54,6 +54,7 @@ export default {
   data() {
     return {
       usuarios: [],
+      myError: '',
     };
   },
   mounted() {
@@ -67,7 +68,7 @@ export default {
         })
         .catch((e) => {
           // handle error
-          console.log(e);
+          this.myError(e);
         });
     },
   },
