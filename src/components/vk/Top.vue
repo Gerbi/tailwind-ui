@@ -153,6 +153,7 @@ export default {
       users: [],
       page: 1,
       per_page: 10,
+      myError: '',
     };
   },
   mounted() {
@@ -165,8 +166,8 @@ export default {
         .then((response) => {
           this.users = response.data.data;
         })
-        .catch((error) => {
-          console.log(error);
+        .catch((e) => {
+          this.myError(e);
         });
     },
   },
