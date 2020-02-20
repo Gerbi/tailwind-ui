@@ -66,7 +66,7 @@
             <div id="dropdown" class="relative inline-block pl-3">
               <button @click="isOpen = true" class="flex items-center py-2 font-semibold focus:outline-none">
                 <img
-                  src="../../assets/img/perfil2-750.jpg"
+                  src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80"
                   alt="" class="object-cover rounded-full h-7 w-7">
                 <svg class="w-6 h-6 ml-1 text-gray-700 fill-current" viewBox="0 0 24 24">
                   <path

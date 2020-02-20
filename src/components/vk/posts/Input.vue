@@ -6,7 +6,7 @@
         <div class="flex justify-between w-full">
           <button class="flex cursor-auto items-start text-xs font-semibold text-gray-600 focus:outline-none">
             <img
-              src="../../../assets/img/perfil2-750.jpg"
+              src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
               alt="" class="h-10 w-10 rounded-full object-cover mr-5">
           </button>
           <textarea @click="controlShow = true" class="block w-full border border-transparent bg-gray-200 focus:outline-none focus:bg-white focus:border-gray-300 text-gray-600 rounded-lg pl-4 py-2 leading-none"

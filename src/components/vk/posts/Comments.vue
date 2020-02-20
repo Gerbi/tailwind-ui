@@ -29,7 +29,7 @@
       <div class="flex items-center justify-between mx-4 lg:mx-8 xl:mx-10">
         <button class="flex items-center w-8 focus:outline-none">
           <img
-            src="../../../assets/img/perfil2-750.jpg"
+            src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             alt="" class="object-cover rounded-full h-7 w-7">
         </button>
         <div class="relative w-full mx-4">
