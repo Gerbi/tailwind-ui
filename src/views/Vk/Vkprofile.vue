@@ -16,7 +16,7 @@
         </form>
       </div>
       <div class="flex my-6">
-        <img class="object-cover w-24 h-24 mr-8 rounded-full" src="../../assets/img/perfil2-750.jpg" alt="">
+        <img class="object-cover w-24 h-24 mr-8 rounded-full" src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" alt="">
         <div class="block px-2">
           <p class="text-xl break-all block block font-semibold text-gray-900">Lucy Heart</p>
           <p class="text-gray-700">самое лучшее в моей жизни 😊</p>
@@ -72,7 +72,7 @@
           <img
             style="transition: all .15s ease"
             v-on:click="toggleModal()"
-            src="../../assets/img/perfil2-750.jpg"
+            src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             alt="" class="h-12 w-12 rounded-full object-cover">
           <div class="ml-3">
             <p class="text-base font-semibold leading-tight xl:text-lg">
@@ -106,7 +106,7 @@
           <img
             style="transition: all .15s ease"
             v-on:click="toggleModal()"
-            src="../../assets/img/perfil2-750.jpg"
+            src="https://images.unsplash.com/photo-1551292831-023188e78222?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
             alt="" class="h-12 w-12 rounded-full object-cover">
           <div class="ml-3">
             <p class="text-base font-semibold leading-tight xl:text-lg">
