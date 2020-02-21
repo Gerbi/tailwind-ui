@@ -28,6 +28,16 @@
                 </span>
               </div>
             </li>
+            <li>
+              <div class="mt-1 -mx-3 px-3 py-2 flex items-center justify-between text-sm font-medium hover:bg-gray-300 rounded-lg" v-on:click="toggleTabs(5)" v-bind:class="{'text-gray-600 bg-vkbody': openTab !== 5, 'text-gray-700 bg-gray-300': openTab === 5}">
+                <span class="inline-flex items-center">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7 fill-current text-blue-500">
+                    <path d="M9 12A5 5 0 1 1 9 2a5 5 0 0 1 0 10zm0-2a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7 11a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v2a1 1 0 0 1-2 0v-2a5 5 0 0 1 5-5h4a5 5 0 0 1 5 5v2zm1-5a1 1 0 0 1 0-2 5 5 0 0 1 5 5v2a1 1 0 0 1-2 0v-2a3 3 0 0 0-3-3zm-2-4a1 1 0 0 1 0-2 3 3 0 0 0 0-6 1 1 0 0 1 0-2 5 5 0 0 1 0 10z"/>
+                  </svg>
+                  <span class="ml-4 text-gray-800">Communities</span>
+                </span>
+              </div>
+            </li>
           </ul>
         </div>
       </div>
@@ -43,6 +53,9 @@
                   <div v-bind:class="{'hidden': openTab !== 4, 'block': openTab === 4}">
                     <Vkfriends />
                   </div>
+                  <div v-bind:class="{'hidden': openTab !== 5, 'block': openTab === 5}">
+                    <Vkcommunities />
+                  </div>
                 </div>
               </div>
             </div>
@@ -57,13 +70,15 @@
 import Top from '../components/vk/Top.vue';
 import Vkprofile from './Vk/Vkprofile.vue';
 import Vkfriends from './Vk/Vkfriends.vue';
+import Vkcommunities from './Vk/Vkcommunities.vue';
 
 export default {
   name: 'Inbox',
   components: {
-    Vkfriends,
-    Vkprofile,
     Top,
+    Vkprofile,
+    Vkfriends,
+    Vkcommunities,
   },
   data() {
     return {

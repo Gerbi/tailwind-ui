@@ -1,6 +1,6 @@
 <template>
   <!-- eslint-disable max-len -->
-  <div class="bg-white rounded-lg shadow-sm px-4 py-5">
+  <div class="px-4 py-5 bg-white rounded-lg shadow-sm">
     <div class="">
       <div class="relative w-full">
         <form @submit.prevent="getCommunities()">
@@ -19,8 +19,8 @@
           <div class="mx-2 text-gray-600 rounded-lg cursor-pointer hover:bg-gray-200 hover:text-gray-700">
             <div class="flex justify-between p-2">
               <div class="flex">
-            <span class="flex items-center justify-center w-10 h-10 rounded-full border-2 border-gray-300">
-              <img class="rounded-full object-cover" :src="usuario.avatar" alt="">
+            <span class="flex items-center justify-center w-10 h-10 border-2 border-gray-300 rounded-full">
+              <img class="object-cover rounded-full" :src="usuario.avatar" alt="">
             </span>
                 <div class="ml-3">
                   <p class="text-sm text-blue-700">
