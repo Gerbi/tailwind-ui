@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Inicio from '../views/Inicio.vue';
+import Vk from '../views/Vk.vue';
 
 Vue.use(VueRouter);
 
@@ -16,9 +17,16 @@ const routes = [
     component: () => import('../views/Gerbi.vue'),
   },
   {
-    path: '/vk',
-    name: 'Vk',
-    component: () => import('../views/Vk.vue'),
+    path: '/vk/', component: Vk, name: 'Vk',
+  },
+  {
+    path: '*',
+    component: () => import('../components/NotFound.vue'),
+  },
+  {
+    path: '/kod',
+    name: 'kod',
+    component: () => import(/* webpackChunkName: "about" */ '../views/kod/First.vue'),
   },
   // {
   //   path: '/profile',
@@ -49,11 +57,6 @@ const routes = [
   //   path: '/schedule',
   //   name: 'schedule',
   //   component: () => import(/* webpackChunkName: "about" */ '../views/ckdulz/schedule.vue'),
-  // },
-  // {
-  //   path: '/kod',
-  //   name: 'kod',
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/kod/First.vue'),
   // },
   // {
   //   path: '/coinbase',
@@ -93,6 +96,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
+  mode: 'history',
   routes,
 });
 
