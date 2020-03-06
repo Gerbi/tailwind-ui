@@ -1,7 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <main>
-    <div v-if="api_status === 'FETCHING'">Fetching</div>
+    <div class="flex justify-center" v-if="api_status === 'FETCHING'">Fetching</div>
     <div v-else-if="api_status === 'FETCHING_ERROR'">Error</div>
     <div v-else-if="api_status === 'FETCHING_SUCCESS'">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
@@ -91,7 +91,7 @@ export default {
   setup() {
     // eslint-disable-next-line camelcase
     const { data, api_status, initFetch } = useApi(
-      'http://newsapi.org/v2/top-headlines?country=mx&apiKey=2fe02a107f914d02bf678cd0a8805d8a',
+      'https://newsapi.org/v2/top-headlines?country=mx&apiKey=2fe02a107f914d02bf678cd0a8805d8a',
       {
         fetchImmediately: true,
       },
