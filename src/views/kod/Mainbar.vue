@@ -71,7 +71,6 @@ const useApi = (url, options = {}) => {
       state.api_status = 'FETCHING';
       const response = await fetch(url);
       const data = await response.json();
-      console.log(data.articles);
       state.data = data.articles;
       state.api_status = 'FETCHING_SUCCESS';
     } catch (error) {
