@@ -1,14 +1,7 @@
 <template>
   <!-- eslint-disable max-len -->
   <div class="min-h-screen bg-background-primary" :class="theme">
-    <div class="fixed top-0 left-0 z-50 bg-indigo-600 text-white shadow-md px-2 rounded-br font-mono">
-      <span class="sm:hidden">df</span>
-      <span class="hidden sm:inline md:hidden">sm</span>
-      <span class="hidden md:inline lg:hidden">md</span>
-      <span class="hidden lg:inline xl:hidden">lg</span>
-      <span class="hidden xl:inline">xl</span>
-    </div>
-    <header id="nav" class="p-2 md:p-4 sticky bg-background-primary top-0 z-40 xl:px-0">
+    <header id="nav" class="p-2 sm:p-4 md:p-4 sticky bg-background-primary top-0 z-40 xl:px-0">
       <div class="mx-auto max-w-screen-xl overflow-visible lg:px-4 xl:px-16">
         <div class="bg-white bg-background-secondary px-3 shadow-sm rounded-sm">
           <nav
@@ -24,7 +17,7 @@
                 ref="openButton"
                 @click="menuShow = false"
                 type="button"
-                class="block text-blue-600 focus:outline-none focus:text-gray-900"
+                class="block text-blue-600 focus:outline-none"
                 aria-label="Menu"
               >
                 <svg v-if="menuShow" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -72,11 +65,11 @@
       </div>
     </header>
     <div class="pb-12 max-w-screen-xl overflow-x-hidden mx-auto lg:px-4 xl:px-16">
-        <div class="flex flex-col lg:flex-row -mx-4">
-          <div class="order-last lg:order-first px-2 w-full lg:w-3/4">
+        <div class="flex flex-col lg:flex-row">
+          <div class="order-last lg:order-first px-2 sm:px-4 w-full lg:w-3/4 lg:pl-0 lg:pl-4 xl:px-0">
             <Mainbar />
           </div>
-          <div class="order-first lg:order-last px-2 w-full lg:w-1/4 lg:px-4 xl:px-4">
+          <div class="order-first lg:order-last px-2 sm:px-4 w-full lg:w-1/4 lg:pl-0 lg:pr-4 xl:pr-0 xl:pl-4">
             <Sidebar />
           </div>
         </div>

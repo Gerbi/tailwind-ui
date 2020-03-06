@@ -1,10 +1,10 @@
 <template>
   <!-- eslint-disable max-len -->
-  <main class="px-4">
+  <main>
     <div v-if="api_status === 'FETCHING'">Fetching</div>
     <div v-else-if="api_status === 'FETCHING_ERROR'">Error</div>
     <div v-else-if="api_status === 'FETCHING_SUCCESS'">
-      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
         <div v-for="(item, i) in articles" :key="i">
           <article class="relative w-full bg-background-secondary rounded-sm h-400 shadow col-span-1 sm:col-span-1">
             <router-link to="/{i}" class="bg-background-secondary rounded-sm h-full">
