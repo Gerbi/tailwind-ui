@@ -20,7 +20,7 @@ const routes = [
     path: '/vk/', component: Vk, name: 'Vk',
   },
   {
-    path: '*',
+    path: '/*',
     component: () => import('../components/NotFound.vue'),
   },
   {
@@ -97,6 +97,7 @@ const routes = [
 
 const router = new VueRouter({
   mode: 'history',
+  base: process.env.BASE_URL,
   routes,
 });
 
