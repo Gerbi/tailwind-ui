@@ -5,7 +5,12 @@ import router from './router/index';
 import store from './store/index';
 import '@lottiefiles/lottie-player';
 
-
+Vue.filter('truncate', (value, length, suffix) => {
+  if (value.length > length) {
+    return value.substring(0, length) + suffix;
+  }
+  return value;
+});
 Vue.config.productionTip = false;
 Vue.use(VueCompositionApi);
 
