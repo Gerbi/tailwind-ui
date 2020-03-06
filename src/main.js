@@ -3,7 +3,6 @@ import VueCompositionApi from '@vue/composition-api';
 import App from './App.vue';
 import router from './router/index';
 import store from './store/index';
-import '@lottiefiles/lottie-player';
 
 Vue.filter('truncate', (value, length, suffix) => {
   if (value.length > length) {

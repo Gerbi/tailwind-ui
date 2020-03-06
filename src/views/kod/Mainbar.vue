@@ -1,8 +1,8 @@
 <template>
   <!-- eslint-disable max-len -->
   <main>
-    <div class="flex justify-center" v-if="api_status === 'FETCHING'">Fetching</div>
-    <div v-else-if="api_status === 'FETCHING_ERROR'">Error</div>
+    <div class="text-center" v-if="api_status === 'FETCHING'">Fetching</div>
+    <div class="text-center" v-else-if="api_status === 'FETCHING_ERROR'">Error</div>
     <div v-else-if="api_status === 'FETCHING_SUCCESS'">
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
         <div v-for="(item, i) in articles" :key="i">

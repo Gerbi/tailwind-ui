@@ -58,22 +58,6 @@ module.exports = {
         },
       },
     },
-    linearGradientDirections: { // defaults to these values
-      't': 'to top',
-      'tr': 'to top right',
-      'r': 'to right',
-      'br': 'to bottom right',
-      'b': 'to bottom',
-      'bl': 'to bottom left',
-      'l': 'to left',
-      'tl': 'to top left',
-    },
-    linearGradientColors: { // defaults to {}
-      'red': '#f00',
-      'red-blue': ['#f00', '#00f'],
-      'red-green-blue': ['#f00', '#0f0', '#00f'],
-      'black-white-with-stops': ['#000', '#000 45%', '#fff 55%', '#fff'],
-    },
     customForms: (theme) => ({
       default: {
         input: {
@@ -109,15 +93,7 @@ module.exports = {
       },
     }),
   },
-  variants: {
-    backgroundImage: ['responsive'], // this is for the "bg-none" utility
-    linearGradients: ['responsive'],
-    radialGradients: ['responsive'],
-    conicGradients: ['responsive'],
-    repeatingLinearGradients: ['responsive'],
-    repeatingRadialGradients: ['responsive'],
-    repeatingConicGradients: ['responsive'],
-  },
+  variants: {},
   plugins: [
     '@tailwindcss/custom-forms',
   ],
