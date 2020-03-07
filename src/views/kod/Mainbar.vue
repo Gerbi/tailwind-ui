@@ -7,7 +7,7 @@
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-4">
         <div v-for="(item, i) in articles" :key="i">
           <article class="relative w-full bg-background-secondary rounded-sm h-400 shadow col-span-1 sm:col-span-1">
-            <router-link to="/{i}" class="bg-background-secondary rounded-sm h-full">
+            <router-link to="/kod/#" class="bg-background-secondary rounded-sm h-full">
               <div class="post-card-wrapper bg-cover rounded-t-sm h-40 px-16 pt-10 pb-16"
                    :style="{ backgroundImage: `url(${item.urlToImage})` }"
                    style="box-shadow: inset 0 0 0 9999px rgba(0,89,147,.75);">
@@ -39,12 +39,12 @@
               <div class="p-5">
                 <div class="flex items-center mb-3">
                   <button class="px-2 py-1 mr-4 text-xs text-blue-600 uppercase border border-blue-600 rounded-sm">news</button>
-                  <time class="text-sm font-semibold text-blue-600">{{ item.publishedAt }}</time>
+                  <time class="text-sm font-semibold text-blue-600">{{ item.publishedAt | moment("DD.MM") }}</time>
                 </div>
-                <div class="mb-2 text-lg font-medium text-copy-primary" v-if="item.title && item.title.length > 1">
-                  {{ item.title | truncate(90, '..') }}
+                <div class="mb-2 text-lg font-medium text-copy-primary overflow-hidden" v-if="item.title && item.title.length > 1">
+                  {{ item.title | truncate(80, '..') }}
                 </div>
-                <div class="text-sm text-copy-secondary text-justify overflow-hidden whitespace-wrap" v-if="item.description && item.description.length > 1">{{ item.description | truncate(80, '...') }}</div>
+                <div class="text-sm text-copy-secondary text-justify overflow-hidden" v-if="item.description && item.description.length > 1">{{ item.description | truncate(80, '...') }}</div>
               </div>
             </router-link>
           </article>

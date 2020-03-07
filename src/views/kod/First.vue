@@ -74,6 +74,7 @@
           </div>
         </div>
     </div>
+    <Footer />
   </div>
 </template>
 
@@ -81,15 +82,19 @@
 import Mainbar from './Mainbar.vue';
 import Sidebar from './Sidebar.vue';
 import ThemeSwitcher from './ThemeSwitcher.vue';
+import Footer from './Footer.vue';
 
 export default {
   name: 'First',
-  components: { ThemeSwitcher, Mainbar, Sidebar },
+  components: {
+    Footer, ThemeSwitcher, Mainbar, Sidebar,
+  },
   data() {
     return {
       ThemeSwitcher,
       Mainbar,
       Sidebar,
+      Footer,
       theme: '',
       isOpen: false,
       menuShow: true,

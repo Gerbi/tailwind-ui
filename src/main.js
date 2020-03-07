@@ -4,6 +4,8 @@ import App from './App.vue';
 import router from './router/index';
 import store from './store/index';
 
+Vue.use(require('vue-moment'));
+
 Vue.filter('truncate', (value, length, suffix) => {
   if (value.length > length) {
     return value.substring(0, length) + suffix;

@@ -4,7 +4,7 @@
     <div class="flex items-center justify-center min-h-screen">
       <div class="flex flex-col justify-around h-full">
         <div class="flex flex-col items-center justify-between text-center">
-          <div class="flex justify-center mb-4">
+          <div class="flex justify-center mt-10 mb-4">
             <lottie-player
               autoplay
               loop
