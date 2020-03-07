@@ -17,16 +17,16 @@ const routes = [
     component: () => import('../views/Gerbi.vue'),
   },
   {
-    path: '/vk/', component: Vk, name: 'Vk',
-  },
-  {
-    path: '/*',
-    component: () => import('../components/NotFound.vue'),
+    path: '/vk', component: Vk, name: 'Vk',
   },
   {
     path: '/kod',
     name: 'kod',
     component: () => import(/* webpackChunkName: "about" */ '../views/kod/First.vue'),
+  },
+  {
+    path: '/*',
+    component: () => import('../components/NotFound.vue'),
   },
   // {
   //   path: '/profile',
