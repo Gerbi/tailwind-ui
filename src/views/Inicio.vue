@@ -21,9 +21,9 @@
           <router-link to="/vk" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>Vk</p>
           </router-link>
-          <router-link to="/kod" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
+          <a href="https://goofy-clone-news.netlify.com/" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>Kd</p>
-          </router-link>
+          </a>
           <a href="https://ecommerce-galileo.netlify.com/" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>St</p>
           </a>
