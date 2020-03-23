@@ -15,11 +15,14 @@
             </lottie-player>
           </div>
           <h1 class="mt-8 text-3xl font-bold leading-loose text-gray-200">Gerbi Gómez</h1>
-          <h1 class="my-3 text-lg leading-normal text-gray-200">Web Developer</h1>
+          <h1 class="my-3 text-lg leading-normal text-gray-200">I'm Web Developer</h1>
         </div>
         <div class="flex justify-center mt-8 text-center">
           <router-link to="/vk" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>Vk</p>
+          </router-link>
+          <router-link to="/Dash" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
+            <p>Example</p>
           </router-link>
           <a href="https://goofy-clone-news.netlify.com/" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>Kd</p>
@@ -27,7 +30,7 @@
           <a href="https://ecommerce-galileo.netlify.com/" class="px-5 py-3 mx-2 text-sm font-normal leading-none text-white transition duration-500 ease-in-out transform rounded-lg shadow-xl bg-overdark hover:bg-overlight hover:-translate-y-1 hover:scale-110">
             <p>St</p>
           </a>
-        </div>
+        </div>s
         <div class="flex justify-center my-24">
           <a href="https://www.github.com/gerbi"
              class="flex items-center justify-center w-12 h-12 font-normal text-white rounded-full shadow-lg outline-none hover:text-gray-400  align-center focus:outline-none"

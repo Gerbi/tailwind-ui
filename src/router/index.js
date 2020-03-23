@@ -2,6 +2,7 @@ import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Inicio from '../views/Inicio.vue';
 import Vk from '../views/Vk.vue';
+import Dash from '../views/Dash01.vue';
 
 Vue.use(VueRouter);
 
@@ -18,6 +19,9 @@ const routes = [
   },
   {
     path: '/vk', component: Vk, name: 'Vk',
+  },
+  {
+    path: '/Dash', component: Dash, name: 'Dash',
   },
   {
     path: '/*',
