@@ -24,9 +24,6 @@ module.exports = {
       boxShadow: {
         outline: '0 0 0 3px rgba(66, 123, 225, 0.25)',
       },
-      fontFamily: {
-        sans: 'Roboto, sans-serif',
-      },
       colors: {
         vknav: '#4a76a8',
         vkbody: '#edeef0',
@@ -48,6 +45,7 @@ module.exports = {
           primary: 'var(--bg-background-primary)',
           secondary: 'var(--bg-background-secondary)',
           tertiary: 'var(--bg-background-tertiary)',
+          quaternary: 'var(--bg-background-quaternary)',
         },
         copy: {
           primary: 'var(--text-copy-primary)',
